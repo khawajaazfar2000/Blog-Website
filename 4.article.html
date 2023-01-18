@@ -25,6 +25,112 @@
          </div>
       </header>
 
+      <div class="container container-flex">
+
+         <main role="main">
+   
+            <article class="article-featured">
+               <h1 class="article-title">Python Machine Learning —Capturing and processing webcam video</h1>
+               <img src="img/1_r32tPVx3EIi2n4jmqm6gGw.jpg" alt="greenery pic" class="article-image">
+               <p class="article-info">July 23, 2021 </p>
+            </article>
+   
+   
+            <h1 class="article-title">Python Machine Learning</h1>
+            <p class="article-body"> To gather video data, we will use a webcam. Let's look at how to use OpenCV-Python to
+               capture video from a webcam.
+            </p>
+   
+   
+     
+            <h1 class="article-title">How to do it…</h1><br><br>
+            <p class="article-body">
+            <h1>1. Create a new Python file, and import the following packages:</h1><br>
+            Import cv2
+            <br>
+   
+            <h1>2. OpenCV provides a video capture object that we can use to capture images from the webcam. The 0 input
+               argument specifies the ID of the webcam. If you connect a USB</h1><br>
+            camera, then it will have a different ID:<br><br>
+            # Initialize video capture object<br><br>
+            cap = cv2.VideoCapture(0)<br><br>
+   
+            <h1>3. Define the scaling factor for the frames captured using the webcam:</h1><br><br>
+            # Define the image size scaling factor<br><br>
+            scaling_factor = 0.5<br><br>
+   
+            <h1>4. Start an infinite loop and keep capturing frames until you press the Esc key.</h1><br><br>
+            scaling_factor = 0.5<br><br>
+            Read the frame from the webcam:<br><br>
+            # Loop until you hit the Esc key<br><br>
+            while True:<br><br>
+            # Capture the current frame<br><br>
+            ret, frame = cap.read()<br><br>
+   
+            <h1>5. Resizing the frame is optional but still a useful thing to have in your code:</h1><br><br>
+            scaling_factor = 0.5<br><br>
+            # Resize the frame<br><br>
+            frame = cv2.resize(frame, None, fx=scaling_factor, fy=scaling_<br><br>
+            factor,<br><br>
+            interpolation=cv2.INTER_AREA)<br><br>
+   
+            <h1>6. Display the frame:</h1><br><br>
+             # Display the image<br><br>
+             cv2.imshow(‘Webcam’, frame)<br><br>
+   
+            <h1>7. Wait for 1 ms before capturing the next frame:</h1><br><br>
+             # Detect if the Esc key has been pressed<br><br>
+             c = cv2.waitKey(1)<br><br>
+             if c == 27:<br><br>
+             break<br><br>
+   
+            <h1>8. Release the video capture object:</h1><br><br>
+            # Release the video capture object<br><br>
+            cap.release()<br><br>
+   
+            <h1>9. Close all active windows before exiting the code:</h1><br><br>
+            # Close all active windows<br><br>
+             cv2.destroyAllWindows()<br><br>
+   
+            <h1>10. If you run this code, you will see the video from the webcam.</h1><br><br>
+   
+            </p>
+   
+   
+   
+         </main>
+   
+         <aside class="sidebar">
+   
+            <div class="sidebar-widget">
+               <h2 class="widget-title">ABOUT ME</h2>
+               <img src="img/about-me.jpg" alt="" class="widget-image">
+               <p class="widget-body">I find life better, and I'm happier, when things are nice and simple.</p>
+            </div>
+   
+            <div class="sidebar-widget">
+               <h2 class="widget-title">RECENT POSTS</h2>
+   
+               <div class="widget-recent-post">
+                  <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
+                  <img src="img/food.jpg" alt="" class="widget-image">
+               </div>
+   
+               <div class="widget-recent-post">
+                  <h3 class="widget-recent-post-title">Simplicity and work</h3>
+                  <img src="img/work.jpg" alt="" class="widget-image">
+               </div>
+   
+               <div class="widget-recent-post">
+                  <h3 class="widget-recent-post-title">Simple decoration</h3>
+                  <img src="img/deco.jpg" alt="" class="widget-image">
+               </div>
+   
+            </div>
+   
+         </aside>
+      </div>
+
    <footer>
          <p><strong>Living the simple life</strong></p>
          <p>Copyright &copy; 2022</p>
