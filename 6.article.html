@@ -1,34 +1,289 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="style.css">
-      <title>Responsive Blog Website | Home</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-   </head>
-   <body>
-      <header>
-         <div class="container container-nav">
-            <div class="site-title">
-               <h1>Living The Social Life</h1>
-               <p class="subtitle">A blog exporting minimalism in life</p>
-            </div>
-            <nav>
-               <ul>
-                  <li><a href="index.html" class="current-page">Home</a></li>
-                  <li><a href="about.html">About me</a></li>
-                  <li><a href="recent.html">Recent posts</a></li>
-               </ul>
-            </nav>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="style.css">
+   <title>AWS Sagemaker Studio</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+   <header>
+      <div class="container container-nav">
+         <div class="site-title">
+            <h1>Living The Social Life</h1>
+            <p class="subtitle">A blog exporting minimalism in life</p>
          </div>
-      </header>
+         <nav>
+            <ul>
+               <li><a href="index.html" class="current-page">Home</a></li>
+               <li><a href="about.html">About me</a></li>
+               <li><a href="recent.html">Recent posts</a></li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+
+
+   <div class="container container-flex">
+
+      <main role="main">
+
+         <article class="article-featured">
+            <h1 class="article-title"></h1>
+            <img src="img/amzaon_cloud_2.png" alt="greenery pic" class="article-image">
+            <p class="article-info">May 23, 2022 </p>
+         </article>
+
+
+         <h1 class="article-title">What is Amazon EC2?</h1>
+         <p class="article-body"> The way Amazon EC2 works and how it can be implemented in place of traditional
+            on-premises compute highlights why the cloud is so important in today’s world. Amazon EC2 as a service
+            epitomizes the flexibility, durability, availability, and low barrier to entry you get when you use the
+            cloud. Amazon EC2 strongly emphasizes why you should be utilizing the cloud for your business today.
+         </p>
+
+         <h1 class="article-title"></h1>
+         <p class="article-body"> Amazon EC2 is the Amazon Elastic Compute Cloud (EC2) – a compute service running on
+            Amazon Web Services (AWS). In short, Amazon EC2 is a Virtual Machine – which is nothing new. But what makes
+            Amazon EC2 special, is what it can provide in terms of scalability, flexibility and raw compute
+            power.<br><br>
+
+            Offering secure, resizable compute capacity in the AWS cloud, Amazon EC2 has been designed by AWS to make
+            web-scale cloud computing easier for developers. Amazon EC2’s simple web service interface allows you to
+            obtain and configure capacity with minimal friction.<br><br>
+
+            You get complete control of your computing resources, with the flexibility to use what you need, without
+            paying for unwanted compute. Flexibility means the ability to choose from hundreds of different instance
+            types depending on your use case, whether you want to host a simple website or whether you are performing
+            some extremely compute-intensive operations.<br><br>
+
+            The power of Amazon EC2 is that you are given your own virtual machine in which you can do whatever you want
+            with, and the use cases are infinite.<br><br>
+
+            The resizable nature also means that you are never under or over provisioning your resources, providing the
+            perfect balance between operational efficiency and cost optimization. EC2 also is part of the free tier, and
+            you can benefit from 750 hours of Linux and Windows t2.micro instances, ( t3.micro for the regions in which
+            t2.micro is unavailable) each month for one whole year!<br><br>
+
+            There are a number of different things you can choose to configure when it comes to launching an EC2
+            instances, more than we can get into in one blog post in fact – but we will cover the main configuration
+            options of EC2.<br><br>
+
+            When you launch your virtual machine, you get to configure each of the following options for the underlying
+            server (amongst many other settings):<br><br>
+
+         <ul>
+            <li>AMI (Amazon Machine Image)</li>
+            <li>Instance Type </li>
+            <li>Storage </li>
+            <li>Security Group </li>
+         </ul>
+
+         </p>
+
+         <h1 class="article-title">What is an AMI?</h1>
+
+         <p> An Amazon Machine Image (AMI) is basically a template that contains the software configuration (operating
+            system, application server, and applications) required to launch your instance. You can select an AMI
+            provided by AWS, the user community, or the AWS Marketplace; or you can select one of your own AMIs.<br><br>
+
+            There are many different choices to get started, from the basic ‘Amazon Linux 2 AMI’ for a simple Linux
+            server all the way to deep learning AMIs and IoT AMIs on the AWS Marketplace. </p>
+
+         <h1>What is an Instance Type? </h1>
+         <p>Amazon EC2 provides a wide selection of instance types optimized to fit different use cases. Instances are
+            virtual servers that can run applications. They have varying combinations of CPU, memory, storage, and
+            networking capacity, and give you the flexibility to choose the appropriate mix of resources for your
+            applications.<br><br>
+
+            These instance types are also in certain families, some of which are below:<br><br>
+         <ul>
+            <li>T2 – T2 instances are a low-cost, general purpose instance type that provides a baseline level of CPU
+               performance with the ability to burst above the baseline when needed.</li>
+            <li> C5 instances – C5 instances are optimized for compute-intensive workloads and deliver cost-effective
+               high
+               performance at a low price per compute ratio.</li>
+            <li>P2 – P2 instances are intended for general-purpose GPU compute applications.</li>
+         </ul>
+         <br><br>
+
+         There are a number of different instance types, which will have different use cases depending on your budget
+         and what type of EC2 instance you need to launch.
+         <br>
+         <h1>Storage </h1>
+         <p> Your instance will be launched with an attached Amazon Elastic Block Store (Amazon EBS) volume. You can
+            attach additional Amazon EBS volumes and instance store volumes to your instance, or edit the settings of
+            the root volume. You can also attach additional EBS volumes after launching an instance, but not instance
+            store volumes.<br><br>
+
+            You can choose the size of the volume in a GiB, as well as one of four storage types, namely;<br><br>
+
+         <ul>
+            <li>General Purpose SSD (gp2 and gp3)</li>
+            <li>Provisioned IOPS (io1 and io2)</li>
+         </ul>
+         Again, this is simply dependent on your use cases – and as I stated above you can also attach additional EBS
+         volumes for storing persistent data or instance store volumes for ephemeral storage.</p>
+
+         <h1>Security Groups</h1>
+         <p>A security group is a set of firewall rules that control the traffic for your instance. On this page, you
+            can add rules to allow specific traffic to reach your instance. For example, if you want to set up a web
+            server and allow Internet traffic to reach your instance, add rules that allow unrestricted access to the
+            HTTP and HTTPS ports. You can create a new security group or select from an existing one below.<br><br>
+
+            Even if you aren’t using the free tier there are many ways to configure your use of EC2 so that you can
+            ensure you are getting the best price and using only what you need to achieve performant
+            architecture.<br><br>
+
+            The four different pricing options for EC2 are as follows;<br><br>
+
+         <ul>
+            <li>On-Demand</li>
+            <li>Reserved Instances</li>
+            <li>Spot Instances</li>
+            <li>Saving Plans</li>
+         </ul>
+
+         </p>
+
+         <h1>On-Demand</h1>
+         <p> On-Demand is what it sounds like. You pay for computing capacity by the hour (or a minimum of 60 seconds)
+            for as long as you need it, with the ability to start and stop your instance whenever you need to. You can
+            also change the compute capacity on the fly, allowing you to mirror the needs of your application
+            seamlessly. It is also the most costly pricing option when it comes to EC2.<br><br>
+
+            There are some use cases in which On-Demand instances are perfect:<br><br>
+
+         <ul>
+            <li>Short term, spiky or unpredictable workloads</li>
+            <li>Test and Dev environments </li>
+            <li> The need to have no payment upfront</li>
+         </ul>
+         </p>
+
+         <h1>Reserved Instances </h1>
+         <p> Reserved instances offer you a potential saving of up to 75% compared to On-Demand pricing. You basically
+            tell AWS that you want to use certain instances for a certain period of time, for either 1 or 3 years and
+            then you either pay all upfront, partial upfront or no upfront — with an all upfront 3-year plan providing
+            the biggest savings. You can also optionally have convertible reserved instances where you can change the
+            instance type as many times as you need to fulfill your needs.<br><br>
+
+            The best use cases for reserved instances are:<br><br>
+
+         <ul>
+            <li>Steady-state applications </li>
+            <li>Applications that require reserved capacity with long term use</li>
+         </ul>
+         </p>
+
+         <h1>Spot Instances</h1>
+         <p> Spot instances are the cheapest option of all the payment options for EC2. You basically bid for unused EC2
+            capacity from AWS at a massive discount. However, the downside is that as soon as the bid price goes past
+            your bid, AWS will reclaim the instances, meaning potential downtime for your application. Spot instances,
+            therefore, are ideal for the following:
+
+         <ul>
+            <li>Applications with flexible start and end time, e.g batch processing</li>
+            <li>Applications that are only feasible at extremely low cost</li>
+            <li>Spot instances can also be used in auto Scaling groups, as they will only be used temporarily when usage
+               peaks for your application</li>
+         </ul>
+
+         </p>
+
+         <h1>Savings Plans </h1>
+         <p> Savings Plans are a flexible pricing model that offers low prices on EC2, Fargate and Lambda – in exchange
+            for a commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3-year term.
+            They may sound similar, but there are a few differences between Savings Plans and Reserved Instances.<br><br>
+
+            Reserved Instances offer a discount against On-Demand pricing based on committed utilization, whereas
+            Savings Plans offer a discount based on committed spend.<br><br>
+
+            A further difference between the AWS Compute Savings Plans and using Reserved Instances is that Savings
+            Plans not only to apply to the amount spent on EC2 Instances, but also to the amount spent on other compute
+            services too, namely AWS Fargate and Lambda.<br><br>
+
+            Please note that this was just a brief introduction to EC2 because you could likely write an entire book on
+            this subject alone. I hope this has served as an informative introduction to what EC2 is, how it can be
+            used, and some of the pricing models it uses alongside all of the other aspects of EC2.</p>
+
+         
+
+      </main>
+
+      <aside class="sidebar">
+
+         <div class="sidebar-widget">
+            <h2 class="widget-title">ABOUT ME</h2>
+            <img src="img/about-me.jpg" alt="" class="widget-image">
+            <p class="widget-body">I find life better, and I'm happier, when things are nice and simple.</p>
+         </div>
+
+         <div class="sidebar-widget">
+            <h2 class="widget-title">RECENT POSTS</h2>
+
+            <div class="widget-recent-post">
+               <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
+               <img src="img/food.jpg" alt="" class="widget-image">
+            </div>
+
+            <div class="widget-recent-post">
+               <h3 class="widget-recent-post-title">Simplicity and work</h3>
+               <img src="img/work.jpg" alt="" class="widget-image">
+            </div>
+
+            <div class="widget-recent-post">
+               <h3 class="widget-recent-post-title">Simple decoration</h3>
+               <img src="img/deco.jpg" alt="" class="widget-image">
+            </div>
+
+         </div>
+      </aside>
+   </div>
+
+
+   <div class="container">
+      <form action="action_page.php" method="post">
+         <hr>
+
+         <label for="fname">First Name</label>
+         <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+         <label for="lname">Last Name</label>
+         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+         <label for="email">Email</label>
+         <input type="text" id="email" name="email" placeholder="Your email..">
+
+
+         <label for="gender">Gender</label>
+         <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="rather not say">Rather not Say</option>
+         </select>
+
+         <label for="message">Your Message</label>
+         <textarea id="message " name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+         <input type="submit" value="Submit">
+
+      </form>
+   </div>
+
+
 
    <footer>
-         <p><strong>Living the simple life</strong></p>
-         <p>Copyright &copy; 2022</p>
-         <p>Made with <i class="fas fa-heart"></i> By Kru'Z&trade;</p>
-      </footer>
-   </body>
+      <p><strong>Living the simple life</strong></p>
+      <p>Copyright &copy; 2022</p>
+      <p>Made with <i class="fas fa-heart"></i> By Kru'Z&trade;</p>
+   </footer>
+</body>
+
 </html>
