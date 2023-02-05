@@ -20,10 +20,11 @@ img {
 h1,
 h2,
 h3 {
-   font-family: serif;
-   font-weight: 400;
-   color: #143774;
+   font-family: 'Times New Roman';
+   font-weight: 100;
+   color: #095cec;
    margin-top: 0;
+   font-style: normal;
 }
 
 h1 {
@@ -31,8 +32,22 @@ h1 {
    margin: 0;
 }
 
+
+
 h3 {
    color: #1792d2;
+}
+
+h4 {
+   font-family:  'Times New Roman';
+   color: black;
+   font-size: small;
+}
+
+h5 {
+   font-family: 'Courier New', Courier, monospace;
+   color: black;
+   font-size: medium;
 }
 
 .subtitle {
