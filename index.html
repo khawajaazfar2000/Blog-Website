@@ -188,7 +188,7 @@
             <img src="img/myself.jpg" alt="" class="widget-image">
             <p class="widget-body">
 
-            <p> My name is Khawaja Azfar Asif. I am ML Engineer at Confiz. 
+            <p> My name is Khawaja Azfar Asif. I am ML Engineer at Confiz.
                Learning Machine Learning and playing with data is daily routine.I had so many things
                that
             </p>
@@ -231,37 +231,69 @@
 
                      <h2 class="mb-5">Wanna contact me? , here you go...</h2>
 
-                     <form class="border-right pr-5 mb-5" method="post" id="contactForm" name="contactForm">
-                        <div class="row">
-                           <div class="col-md-6 form-group">
-                              <input type="text" class="form-control" name="fname" id="fname" placeholder="First name">
-                           </div>
-                           <div class="col-md-6 form-group">
+                   <!-- <form class="border-right pr-5 mb-5" method="POST" action="form.php">
+
+                           <div class="row">
+                              <div class="col-md-6 form-group">
+                                 <input type="text" class="form-control"  name="fname" id="fname" placeholder="First name">
+                              </div>
+
+                              <div class="col-md-6 form-group">
                               <input type="text" class="form-control" name="lname" id="lname" placeholder="Last name">
+                              </div>
                            </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-12 form-group">
-                              <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                           <div class="row">
+                              <div class="col-md-12 form-group">
+                                 <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                              </div>
                            </div>
-                        </div>
 
-                        <div class="row">
-                           <div class="col-md-12 form-group">
-                              <textarea class="form-control" name="message" id="message" cols="30" rows="7"
-                                 placeholder="Write your message"></textarea>
+                           <div class="row">
+                              <div class="col-md-12 form-group">
+                                 <textarea class="form-control" name="message" id="message" cols="30" rows="7"  placeholder="Write your message"></textarea>
+                              </div>
                            </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-12">
-                              <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
-                              <span class="submitting"></span>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                                 <span class="Thanks, I'll reply ASAP :)"></span>
+                              </div>
                            </div>
+                  </form> -->
+
+                  <form method="POST" action="form.php">
+                     <p>
+                     <!-- <label for="fname">First Name </label>
+                     <input type="text" name="fname" id="fname" placeholder="First name"> -->
+                     <div class="col-md-12 form-group">
+                        <input type="text" class="form-control"  name="fname" id="fname" placeholder="First name">
+                     </div>
+                     </p>
+                     <p>
+                     <!-- <label for="lname">Last Name </label>
+                     <input type="text" name="lname" id="lname"> -->
+                     <div class="col-md-12 form-group">
+                        <input type="text" class="form-control" name="lname" id="lname" placeholder="Last name">
                         </div>
-                     </form>
-
-                     <div id="form-message-warning mt-4"></div>
-
+                     </p>
+                     <p>
+                     <!-- <label for="email">Email</label>
+                     <input type="text" name="email" id="email"> -->
+                     <div class="col-md-12 form-group">
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                     </div>
+                     </p>
+                     <p>
+                        <!-- <label for="message">Message</label>
+                        <input type="text" name="message" id="message"> -->
+                        <div class="col-md-12 form-group">
+                           <textarea class="form-control" name="message" id="message" cols="30" rows="7"  placeholder="Write your message"></textarea>
+                        </div>
+                     </p>
+                     <p>
+                     <input type="submit" name="submit" id="submit" value="Submit">
+                     </p>
+                   </form>
 
                   </div>
                   <div class="col-lg-4 ml-auto">
@@ -271,6 +303,28 @@
                </div>
             </div>
          </div>
+
+         <!-- <form method="POST" action="form.php">
+            <p>
+            <label for="fname">First Name </label>
+            <input type="text" name="fname" id="fname">
+            </p>
+            <p>
+            <label for="lname">Last Name </label>
+            <input type="text" name="lname" id="lname">
+            </p>
+            <p>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            </p>
+            <p>
+               <label for="message">Message</label>
+               <input type="text" name="message" id="message">
+               </p>
+            <p>
+            <input type="submit" name="submit" id="submit" value="Submit">
+            </p>
+          </form> -->
       </div>
    </div>
 
